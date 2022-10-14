@@ -248,6 +248,9 @@ top: 50vh;
         top: 5%;
         left: 200px;
     }
+    input{
+        width: 200px;
+    }
 
 }
 @media screen and (width<545px) {
@@ -255,10 +258,21 @@ top: 50vh;
     .linLogo{
         display: flex;
         align-items: center;
+
     } 
     .midImg{
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .loginFrm{
+        width: 350px;
+    }
+.note{
+    width: 310px;
+    font-size: 9px;
+}
+#verifi{
+    width: 100px;
+}
 }

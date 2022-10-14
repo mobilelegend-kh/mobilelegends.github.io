@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: url(bgImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center;
+}
+.loginFrm{
+    width: 400px;
+    height: 350px;
+    background-color: #16384b;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    box-shadow: 0 0 6px 0 rgb(46, 46, 46);
+    align-items: center;
+
+}
+
+.imgP {
+    margin: auto;
+    margin-top: -75px;
+}
+
+button{
+    
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: White;
+    font-size: 13px;
+    font-family: arial;
+    background-color: rgb(162, 0, 0);
+    outline: none;
+
+}
+
+#chpic {
+    transition: 2s;
+    height: 100vh;
+    animation: changeImg 25s infinite ease-in ;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.lin1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.lin2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.lin3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.lin4{
+    width: 100%;        
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.note{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    width: 360px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #112f41;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    width: 220px;
+    height: 30px;
+    background-color: #112f41;
+    border: none;
+    padding: 5px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    
+}
+input:focus{
+    outline: #157ebf solid 2px;
+}
+.leftSide{
+    width: 40%;
+   
+}
+.rightSide{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linLogo{
+    width: 100%;
+    
+}
+
+.linLogo img{
+    display: flex;
+    /* height: 100%; */
+    /* margin: auto;
+    margin-top: 20px; */
+}
+
+.rightImg{
+    width: 60%;
+    border: none;
+    transition: 2s;
+}
+.midImg{
+    width: 20%;
+
+}
+/* .copyRight{
+    
+    color: rgba(255, 255, 255, 0.416);
+    font-family: cambria;
+    position: absolute;
+top: 50vh;
+} */
+
+
+@keyframes changeImg{
+    0%, 100%{
+        background-image: url(img/hero1.png);
+    }
+    25%, 75%{
+        background-image: url(img/hero2.png);
+    }
+    50%{
+        background-image: url(img/hero4.png)
+    }
+}
+@media screen and (width>767px){
+    .loginFrm{
+        position: absolute;
+        top: 200px;
+        left: 120px;
+    }
+    .linLogo{
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-around;
+    }
+    .copyRight{
+    
+        color: rgba(255, 255, 255, 0.416);
+        font-family: cambria;
+        position: absolute;
+    top: 50vh;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .loginFrm{
+        margin-top: 130px;
+    }
+    .copyRight{
+    
+        color: rgba(255, 255, 255, 0.416);
+        font-family: cambria;
+        position: absolute;
+    top: 68vh;
+    }
+    .midImg{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-left: 14pc;
+        margin-bottom: -50px;
+    }
+
+    #chpic{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        display: none;
+
+    }
+    .content{
+        width: 100%;
+        animation: changeImg infinite ease-in-out;
+    }
+    body{
+        width: auto;
+        height: 750px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-image: url(bgImg.jpg);
+        background-size: cover;
+    }
+    .copyRight{
+        margin-top: 0px;
+        margin: auto;
+        text-align: center;
+    }
+    .imgP {
+        top: 5%;
+        left: 200px;
+    }
+
+}
+@media screen and (width<545px) {
+   
+    .linLogo{
+        display: flex;
+        align-items: center;
+    } 
+    .midImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

